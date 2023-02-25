@@ -13,7 +13,7 @@
     --color-logo-header: #2E2F42;
     --color-logo-footer: #F4F4FD;
     --color-address: #434455;
-    --color-footer: #E7E9FC; 
+    --color-footer: #E7E9FC;
     --color-hero-title: #fff;
     --color-btn-hero: #fff;
     --color-btn-portfolio: #4D5AE5;
@@ -37,7 +37,7 @@
     --brd-color-btn-portfolio: #E7E9FC;
     --brd-color-card-portfolio: #E7E9FC;
     --brd-color-card-portfolio-hover: #F4F4FD;
-    
+
     /* fonts */
     --font-primary: 'Roboto', sans-serif;
     --font-secondary: 'Raleway', sans-serif;
@@ -54,8 +54,13 @@ body {
     background-color: var(--bg-color);
 }
 
-h1, h2, h3, h4, h5, h6, p
-{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
 }
 
@@ -105,7 +110,7 @@ img {
     text-decoration: none;
 }
 
-.link:is(:hover,:focus) {
+.link:is(:hover, :focus) {
     color: var(--color-accent);
 }
 
@@ -131,7 +136,7 @@ img {
 
 .btn-hero:is(:hover, :focus) {
     background-color: var(--bg-color-btn-hero-hover);
-    
+
 }
 
 .btn-portfolio {
@@ -185,7 +190,7 @@ header {
 }
 
 .header .logo {
-    padding: 24px 0;    
+    padding: 24px 0;
 }
 
 .logo-part-header {
@@ -293,13 +298,13 @@ header {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)) , url(../images/people-office.jpg) ;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .hero-title {
-    width: 496px;
+    max-width: 496px;
     margin: 0 auto 48px;
     color: var(--color-hero-title);
     font-size: 56px;
@@ -367,7 +372,8 @@ header {
 }
 
 .whatwedo-title,
-.team-title, .customers-title  {
+.team-title,
+.customers-title {
     text-transform: capitalize;
     font-size: 36px;
     line-height: calc(40/36);
@@ -513,7 +519,7 @@ header {
     height: 100%;
 }
 
-.portfolio-item-ref:is(:hover,:focus) {
+.portfolio-item-ref:is(:hover, :focus) {
     /* border: 1px solid var(--brd-color-card-portfolio-hover); */
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }

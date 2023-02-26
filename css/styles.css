@@ -216,8 +216,12 @@ header {
     color: var(--color-accent);
 }
 
+.current-page-box {
+    /* display: block; */
+    position: relative;
+}
+
 .current-page::before {
-    display: block;
     content: "";
     position: absolute;
     top: 48px;
@@ -226,7 +230,6 @@ header {
     height: 4px;
     background-color: var(--color-accent);
     border: 2px var(--color-accent);
-    /* transform: translateY(24px); */
 }
 
 .contact-link {

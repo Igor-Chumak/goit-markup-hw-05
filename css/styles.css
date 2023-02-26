@@ -216,6 +216,19 @@ header {
     color: var(--color-accent);
 }
 
+.current-page::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 48px;
+    width: 100%;
+    /* width: 48px; */
+    height: 4px;
+    background-color: var(--color-accent);
+    border: 2px var(--color-accent);
+    /* transform: translateY(24px); */
+}
+
 .contact-link {
     display: block;
     padding: 24px 0;

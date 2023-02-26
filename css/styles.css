@@ -553,6 +553,31 @@ header {
     outline: transparent;
 }
 
+.portfolio-item-ref:is(:hover, :focus) .portfolio-item-cover-text {
+    transform: translateX(0);
+}
+
+.portfolio-cover-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-item-cover-text {
+    position: absolute;
+    top: 0;
+
+    padding: 40px 32px;
+    height: 100%;
+
+    color: var(--color-cloud);
+    letter-spacing: 0.02em;
+    background-color: var(--bg-color-cloud);
+
+    transform: translateY(100%);
+    transition: transform var(--transition-property);
+    overflow: auto;
+}
+
 .portfolio-item-content {
     padding: 32px 16px;
     border: 1px solid var(--brd-color-card-portfolio);

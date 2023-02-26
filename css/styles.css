@@ -478,6 +478,7 @@ header {
 .customers-icon-ref:is(:focus, :hover) {
     border-color: var(--color-accent);
     color: var(--color-accent);
+    outline: transparent;
 }
 
 .customers-icon {

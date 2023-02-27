@@ -240,11 +240,11 @@ header {
 .current-page::before {
     content: "";
     position: absolute;
-    top: 48px;
+    bottom: -1px;
     width: 100%;
     height: 4px;
     background-color: var(--color-accent);
-    /* border: 2px var(--color-accent); */
+    border-radius: 2px;
 }
 
 .contact-link {

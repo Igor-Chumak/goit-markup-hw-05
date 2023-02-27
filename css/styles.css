@@ -313,6 +313,7 @@ header {
     align-items: center;
     background-color: var(--bg-color-btn-social);
     border-radius: 50%;
+
     transition: background-color var(--transition-property);
 }
 

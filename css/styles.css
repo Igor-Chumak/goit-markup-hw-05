@@ -53,6 +53,7 @@
 
     /* transition, animation */
     --transition-property: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* --transition-property-modal: 500ms linear; */
 }
 
 /* -- Global -- */
@@ -617,7 +618,10 @@ header {
     top: 0;
     width: 100%;
     height: 100%;
+
     background-color: var(--bg-color-modal);
+
+    transition: opacity var(--transition-property), visibility var(--transition-property);
 }
 
 .is-hidden {
@@ -630,13 +634,20 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     width: 400px;
     min-height: 176px;
     padding: 20px;
+    transform: translate(-50%, -50%) scaleY(1);
+
     border: 1px dashed var(--brd-color-modal);
     border-radius: 5px;
     background-color: var(--bg-color-light);
+
+    transition: transform var(--transition-property);
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scaleY(0);
 }
 
 .btn-modal-close {
@@ -655,7 +666,7 @@ header {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 
-    transition: color var(--transition-property), background-color var(--transition-property),
+    transition: color var(--transition-property), background-color var(--transition-property);
 }
 
 .btn-modal-close:is(:hover, :focus) {
@@ -666,5 +677,8 @@ header {
 }
 
 .modal-close-icon {
+    --size: 8px;
+    width: var(--size);
+    height: var(--size);
     fill: currentColor;
 }

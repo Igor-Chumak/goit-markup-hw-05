@@ -20,6 +20,7 @@
     --color-btn-portfolio: #4D5AE5;
     --color-btn-portfolio-hover: #fff;
     --color-cloud: #F4F4FD;
+    --color-modal-icon: #000;
 
     /* background-color */
     --bg-color: #fff;
@@ -34,12 +35,16 @@
     --bg-color-btn-social: rgba(255, 255, 255, 0.1);
     --bg-color-btn-social-hover: #31D0AA;
     --bg-color-cloud: #4D5AE5;
+    --bg-color-modal: rgba(27, 27, 29, 0.788);
+    --bg-color-btn-modal: #E7E9FC;
+    --bg-color-btn-modal-active: #404BBF;
 
     /* border-color */
     --brd-color: #E7E9FC;
     --brd-color-btn-portfolio: #E7E9FC;
     --brd-color-card-portfolio: #E7E9FC;
     --brd-color-card-portfolio-hover: #F4F4FD;
+    --brd-color-modal: #9747FF;
 
     /* fonts */
     --font-primary: 'Roboto', sans-serif;
@@ -602,4 +607,35 @@ header {
     color: var(--color-secondary);
     letter-spacing: 0.02em;
     background-color: var(--bg-color);
+}
+
+/* -- Modal windows -- */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color-modal);
+}
+
+.modal {
+    /* margin: auto auto; */
+    width: 400px;
+    min-height: 176px;
+    border: 1px dashed var(--brd-color-modal);
+    border-radius: 5px;
+}
+
+.btn-modal-close {
+    --size: 24px;
+    width: var(--size);
+    height: var(--size);
+    background-color: var(--bg-color-btn-modal);
+    /* border: 4px solid var(--bg-color-btn-modal); */
+    border-radius: 50%;
+}
+
+.modal-close-icon {
+    fill: var(--color-modal-icon);
 }

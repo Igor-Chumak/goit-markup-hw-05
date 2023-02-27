@@ -637,7 +637,8 @@ header {
     width: 400px;
     min-height: 176px;
     padding: 20px;
-    transform: translate(-50%, -50%) scaleY(1);
+    /* transform: translate(-50%, -50%) scaleY(1) rotate(0); */
+    transform: translate(-50%, -50%) scaleY(1) skew(0);
 
     border: 1px dashed var(--brd-color-modal);
     border-radius: 5px;
@@ -647,7 +648,8 @@ header {
 }
 
 .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scaleY(0);
+    /* transform: translate(-50%, -50%) scaleY(0) rotate(270deg); */
+    transform: translate(-50%, -50%) scaleY(0) skew(-90deg);
 }
 
 .btn-modal-close {

@@ -510,6 +510,8 @@ header {
     color: var(--color-customs);
     border: 1px solid var(--color-customs);
     border-radius: 4px;
+
+    transition: color var(--transition-property), border-color var(--transition-property);
 }
 
 .customers-icon-ref:is(:focus, :hover) {
